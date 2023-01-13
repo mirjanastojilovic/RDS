@@ -1,0 +1,1015 @@
+<ENTRY>
+{
+ "thisFile": "/home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Aug  9 19:22:37 2022",
+ "timestampMillis": "1660065757074",
+ "buildStep": {
+  "cmdId": "f632f92d-3a20-4043-97d0-cc350f94dc9f",
+  "name": "v++",
+  "logFile": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/link.steps.log",
+  "commandLine": "/scratch/softs/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --link -t hw --platform xilinx_u200_gen3x16_xdma_1_202110_1 --save-temps --vivado.prop run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=../constraints/timing_RDS.tcl --vivado.prop run.impl_1.STEPS.PLACE_DESIGN.TCL.PRE=../constraints/pblocks_RDS.tcl --vivado.synth.jobs 24 --vivado.impl.jobs 24 --kernel_frequency 0:200 -o bin/picorv_sca.xclbin kernel.xo ",
+  "args": [
+   "--link",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u200_gen3x16_xdma_1_202110_1",
+   "--save-temps",
+   "--vivado.prop",
+   "run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=../constraints/timing_RDS.tcl",
+   "--vivado.prop",
+   "run.impl_1.STEPS.PLACE_DESIGN.TCL.PRE=../constraints/pblocks_RDS.tcl",
+   "--vivado.synth.jobs",
+   "24",
+   "--vivado.impl.jobs",
+   "24",
+   "--kernel_frequency",
+   "0:200",
+   "-o",
+   "bin/picorv_sca.xclbin",
+   "kernel.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:22:37 2022",
+ "timestampMillis": "1660065757075",
+ "status": {
+  "cmdId": "f632f92d-3a20-4043-97d0-cc350f94dc9f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Aug  9 19:22:44 2022",
+ "timestampMillis": "1660065764603",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_gen3x16_xdma_1_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "picorv_sca",
+    "file": "/home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "PicoRV32_SCA_kernel",
+     "file": "/home/glamocan/work/ds_22/code/alveo/tcl/kernel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [],
+    "psSources": [],
+    "cuNames": [
+     "PicoRV32_SCA_kernel_1"
+    ],
+    "type": "RTL",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1.1. SW Build 3278995 on 2021-07-20-20:33:48"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 19:22:44 2022",
+ "timestampMillis": "1660065764817",
+ "buildStep": {
+  "cmdId": "3d208d7b-6eaf-42db-a668-c69659c43fa2",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/glamocan/work/ds_22/code/alveo/tcl/kernel.xo -keep --xpfm /opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm --target hw --output_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int --temp_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/kernel.xo",
+   "-keep",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_1_202110_1/xilinx_u200_gen3x16_xdma_1_202110_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int",
+   "--temp_dir",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:22:44 2022",
+ "timestampMillis": "1660065764818",
+ "status": {
+  "cmdId": "3d208d7b-6eaf-42db-a668-c69659c43fa2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:02 2022",
+ "timestampMillis": "1660065782580",
+ "status": {
+  "cmdId": "3d208d7b-6eaf-42db-a668-c69659c43fa2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 19:23:02 2022",
+ "timestampMillis": "1660065782584",
+ "buildStep": {
+  "cmdId": "56d2e066-592e-4c0f-b4a3-8708bec2a9d2",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/sdsl.dat -rtd /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/cf2sw.rtd -nofilter /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/cf2sw_full.rtd -xclbin /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xclbin_orig.xml -o /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:02 2022",
+ "timestampMillis": "1660065782584",
+ "status": {
+  "cmdId": "56d2e066-592e-4c0f-b4a3-8708bec2a9d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:06 2022",
+ "timestampMillis": "1660065786538",
+ "status": {
+  "cmdId": "56d2e066-592e-4c0f-b4a3-8708bec2a9d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 19:23:06 2022",
+ "timestampMillis": "1660065786541",
+ "buildStep": {
+  "cmdId": "c9020ed3-7b5a-4075-8925-621d551454db",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:06 2022",
+ "timestampMillis": "1660065786541",
+ "status": {
+  "cmdId": "c9020ed3-7b5a-4075-8925-621d551454db",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 19:23:07 2022",
+ "timestampMillis": "1660065787001",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:07 2022",
+ "timestampMillis": "1660065787002",
+ "status": {
+  "cmdId": "c9020ed3-7b5a-4075-8925-621d551454db",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 19:23:07 2022",
+ "timestampMillis": "1660065787005",
+ "buildStep": {
+  "cmdId": "07267551-abfd-47a4-bee5-bb7b37379a64",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u200_gen3x16_xdma_1_202110_1 --kernel_frequency 0:200 --remote_ip_cache /home/glamocan/work/ds_22/code/alveo/tcl/.ipcache -s --output_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int --log_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/logs/link --report_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link --config /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/vplConfig.ini -k /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/link --no-info --iprepo /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xo/ip_repo/parsa_epfl_ch_RTLKernel_PicoRV32_SCA_kernel_1_0 --messageDb /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/run_link/vpl.pb /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u200_gen3x16_xdma_1_202110_1",
+   "--kernel_frequency",
+   "0:200",
+   "--remote_ip_cache",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/.ipcache",
+   "-s",
+   "--output_dir",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int",
+   "--log_dir",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/logs/link",
+   "--report_dir",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link",
+   "--config",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xo/ip_repo/parsa_epfl_ch_RTLKernel_PicoRV32_SCA_kernel_1_0",
+   "--messageDb",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/run_link/vpl.pb",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/glamocan/work/ds_22/code/alveo/tcl\nmisc=BinaryName=picorv_sca\n\n[connectivity]\nnk=PicoRV32_SCA_kernel:1:PicoRV32_SCA_kernel_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\nsynth.jobs=24\nimpl.jobs=24\nprop=run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=/home/glamocan/work/ds_22/code/alveo/tcl/../constraints/timing_RDS.tcl\nprop=run.impl_1.STEPS.PLACE_DESIGN.TCL.PRE=/home/glamocan/work/ds_22/code/alveo/tcl/../constraints/pblocks_RDS.tcl\n\n"
+   }
+  ],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:07 2022",
+ "timestampMillis": "1660065787006",
+ "status": {
+  "cmdId": "07267551-abfd-47a4-bee5-bb7b37379a64",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Aug  9 19:23:09 2022",
+ "timestampMillis": "1660065789231",
+ "buildStep": {
+  "cmdId": "81a16ac3-f609-4864-9e20-32b346a75250",
+  "name": "vpl",
+  "logFile": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/link.steps.log",
+  "commandLine": "/scratch/softs/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u200_gen3x16_xdma_1_202110_1 --kernel_frequency 0:200 --remote_ip_cache /home/glamocan/work/ds_22/code/alveo/tcl/.ipcache -s --output_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int --log_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/logs/link --report_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link --config /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/vplConfig.ini -k /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/glamocan/work/ds_22/code/alveo/tcl/_x/link --no-info --iprepo /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xo/ip_repo/parsa_epfl_ch_RTLKernel_PicoRV32_SCA_kernel_1_0 --messageDb /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/run_link/vpl.pb /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:09 2022",
+ "timestampMillis": "1660065789231",
+ "status": {
+  "cmdId": "81a16ac3-f609-4864-9e20-32b346a75250",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Tue Aug  9 19:23:16 2022",
+ "timestampMillis": "1660065796988",
+ "vivadoProject": {
+  "openDir": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 19:23:16 2022",
+ "timestampMillis": "1660065796990",
+ "buildStep": {
+  "cmdId": "f774e8fc-10d8-462a-a904-9e6e1028c3b4",
+  "name": "vivado",
+  "logFile": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:23:16 2022",
+ "timestampMillis": "1660065796990",
+ "status": {
+  "cmdId": "f774e8fc-10d8-462a-a904-9e6e1028c3b4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Aug  9 19:28:44 2022",
+ "timestampMillis": "1660066124013",
+ "buildStep": {
+  "cmdId": "26f8923d-7258-4158-b4fe-c04ae2da9300",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:28:44 2022",
+ "timestampMillis": "1660066124013",
+ "status": {
+  "cmdId": "26f8923d-7258-4158-b4fe-c04ae2da9300",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Aug  9 19:28:44 2022",
+ "timestampMillis": "1660066124014",
+ "buildStep": {
+  "cmdId": "82ed244c-c672-4a25-86ec-552196838fb5",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 19:28:44 2022",
+ "timestampMillis": "1660066124015",
+ "status": {
+  "cmdId": "82ed244c-c672-4a25-86ec-552196838fb5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:30:18 2022",
+ "timestampMillis": "1660069818130",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:30:18 2022",
+ "timestampMillis": "1660069818132",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626043",
+ "status": {
+  "cmdId": "f774e8fc-10d8-462a-a904-9e6e1028c3b4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626119",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626120",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626120",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626121",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626121",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626121",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626123",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/syn/ulp_PicoRV32_SCA_kernel_1_0_synth_1_ulp_PicoRV32_SCA_kernel_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626137",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "82ed244c-c672-4a25-86ec-552196838fb5"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626151",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "82ed244c-c672-4a25-86ec-552196838fb5"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626152",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "82ed244c-c672-4a25-86ec-552196838fb5"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626170",
+ "status": {
+  "cmdId": "81a16ac3-f609-4864-9e20-32b346a75250",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626189",
+ "status": {
+  "cmdId": "07267551-abfd-47a4-bee5-bb7b37379a64",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626192",
+ "buildStep": {
+  "cmdId": "cfc2051a-a3f9-4881-a669-5e2160508fa6",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626193",
+ "status": {
+  "cmdId": "cfc2051a-a3f9-4881-a669-5e2160508fa6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626197",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626200",
+ "buildStep": {
+  "cmdId": "f051cca7-bebf-4eaa-a7c9-0b8d430fa6cd",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/address_map.xml -sdsl /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/sdsl.dat -xclbin /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xclbin_orig.xml -rtd /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.rtd -o /home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.xml",
+  "args": [
+   "-a",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.rtd",
+   "-o",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:46 2022",
+ "timestampMillis": "1660070626201",
+ "status": {
+  "cmdId": "f051cca7-bebf-4eaa-a7c9-0b8d430fa6cd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629694",
+ "status": {
+  "cmdId": "f051cca7-bebf-4eaa-a7c9-0b8d430fa6cd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629695",
+ "buildStep": {
+  "cmdId": "3e2aec85-9547-4a7b-ab61-53c06a678399",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.rtd",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629696",
+ "status": {
+  "cmdId": "3e2aec85-9547-4a7b-ab61-53c06a678399",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629699",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629700",
+ "status": {
+  "cmdId": "3e2aec85-9547-4a7b-ab61-53c06a678399",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629700",
+ "status": {
+  "cmdId": "cfc2051a-a3f9-4881-a669-5e2160508fa6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629703",
+ "buildStep": {
+  "cmdId": "41f924d3-6d32-42ce-97d6-d54944b7b4e0",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.rtd --append-section :JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca_xml.rtd --add-section BUILD_METADATA:JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.xml --add-section SYSTEM_METADATA:RAW:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u200_gen3x16_xdma_1_202110_1 --output /home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.rtd",
+   "--append-section",
+   ":JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/picorv_sca.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/glamocan/work/ds_22/code/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u200_gen3x16_xdma_1_202110_1",
+   "--output",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629704",
+ "status": {
+  "cmdId": "41f924d3-6d32-42ce-97d6-d54944b7b4e0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629949",
+ "status": {
+  "cmdId": "41f924d3-6d32-42ce-97d6-d54944b7b4e0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629952",
+ "buildStep": {
+  "cmdId": "12ea01c6-2edb-40fe-8859-b2b06e96f5f6",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin.info --input /home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin.info",
+   "--input",
+   "/home/glamocan/work/ds_22/code/alveo/tcl/bin/picorv_sca.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:49 2022",
+ "timestampMillis": "1660070629953",
+ "status": {
+  "cmdId": "12ea01c6-2edb-40fe-8859-b2b06e96f5f6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630546",
+ "status": {
+  "cmdId": "12ea01c6-2edb-40fe-8859-b2b06e96f5f6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630549",
+ "buildStep": {
+  "cmdId": "f3f640d3-2166-465a-bd4b-56d8eaff8254",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/glamocan/work/ds_22/code/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630550",
+ "status": {
+  "cmdId": "f3f640d3-2166-465a-bd4b-56d8eaff8254",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630550",
+ "status": {
+  "cmdId": "f3f640d3-2166-465a-bd4b-56d8eaff8254",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630555",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/system_estimate_picorv_sca.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630826",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/reports/link/v++_link_picorv_sca_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630826",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/v++_link_picorv_sca_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630829",
+ "report": {
+  "path": "/home/glamocan/work/ds_22/code/alveo/tcl/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Aug  9 20:43:50 2022",
+ "timestampMillis": "1660070630830",
+ "status": {
+  "cmdId": "f632f92d-3a20-4043-97d0-cc350f94dc9f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

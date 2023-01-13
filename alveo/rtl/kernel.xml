@@ -1,0 +1,19 @@
+<!-- RDS: FPGA Routing Delay Sensors for Effective Remote Power Analysis Attacks -->
+<!-- Copyright 2023, School of Computer and Communication Sciences, EPFL. -->
+<!-- All rights reserved. Use of this source code is governed by a -->
+<!-- BSD-style license that can be found in the LICENSE.md file. -->
+
+<root versionMajor="1" versionMinor="0">
+    <kernel name="AES_SCA_kernel" language="ip_c" vlnv="parsa.epfl.ch:RTLKernel:AES_SCA_kernel:1.0" attributes="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" interrupt="true">
+        <ports>
+            <port name="m_axi_bank_0" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFFFFFFFFFF" dataWidth="512" />
+            <port name="s_axi_control" portType="addressable" mode="slave" base="0x0" range="0xfff" dataWidth="32" />
+        </ports>
+        <args>
+            <arg id="0" name="pointer_0" addressQualifier="1" port="m_axi_bank_0" hostOffset="0x0" hostSize="0x8" offset="0x00000200" size="0x8" type="unsigned int*" />
+            <arg id="1" name="reset" addressQualifier="0" port="s_axi_control" hostOffset="0x0" hostSize="0x4" offset="0x4" size="0x4" type="unsigned int" />
+        </args>
+        <compileWorkGroupSize x="1" y="1" z="1" />
+        <maxWorkGroupSize x="1" y="1" z="1" />
+    </kernel>
+</root>
