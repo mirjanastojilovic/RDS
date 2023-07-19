@@ -19,7 +19,7 @@ set work_dir [pwd]
 puts "The new working directory is [pwd]"
 
 # Set sources path
-set src_path ..
+set src_path ../hw
 set src_path [file normalize $src_path]
 
 # Create vivado project with the desired name
@@ -42,10 +42,6 @@ import_files -norecurse "$src_path/rtl/AES_Comp.v" \
                         "$src_path/rtl/general/BRAM_dual_clock.vhd" \
                         "$src_path/rtl/general/counter_up.vhd" \
 			"$src_path/rtl/general/FSM_FIFO.vhd" \
-                        "$src_path/rtl/general/n_plus_k_div_ROM.coe" \
-                        "$src_path/rtl/general/n_plus_k_ROM.coe" \
-                        "$src_path/rtl/general/n_plus_k_div_ROM_k64.coe" \
-                        "$src_path/rtl/general/n_plus_k_ROM_k64.coe" \
                         "$src_path/rtl/uart/UART.vhd" \
                         "$src_path/rtl/uart/rxuartlite.v" \
                         "$src_path/rtl/uart/txuartlite.v" \

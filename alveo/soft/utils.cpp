@@ -258,7 +258,7 @@ void send_calibration(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
 }
 
 
-void calibrate_sensors_from_file(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
+void calibrate_from_file(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
                                  int N_SENSORS,
                                  int IDC_SIZE, int IDF_SIZE, char* CALIB_PATH) {
     // Load calibration data from file
@@ -302,7 +302,7 @@ void calibrate_sensors_from_file(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
     fclose(idc_idf_file);
 }
 
-void calibrate(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
+void calibrate_tdc(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
                char calib_file_name[100], int N_SENSORS, int N_SAMPLES,
                int IDC_SIZE, int IDF_SIZE, int calib, int SENSOR_WIDTH, FILE* idc_idf_f) {
     uint32_t **idc_idf = (uint32_t **)malloc(N_SENSORS * sizeof(uint32_t *));
@@ -425,7 +425,7 @@ void calibrate(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
     return;
 }
 
-void calibrate_idc_idf(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
+void calibrate_rds(xrt::ip kernel, xrt::bo buffer, uint32_t *hbuf,
                        char calib_file_name[100], int N_SENSORS, int N_SAMPLES,
                        int IDC_SIZE, int IDF_SIZE, int calib,
                        int SENSOR_WIDTH, FILE* idc_idf_f) {

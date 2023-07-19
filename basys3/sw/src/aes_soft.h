@@ -22,7 +22,4 @@ void ShiftRows(unsigned char* state);
 void MixColumns(unsigned char* state);
 void AddRoundKey(unsigned char* state, unsigned char* roundKey);
 void AES_Encrypt(unsigned char* message, unsigned char* key);
-void AES_Encrypt_partial(unsigned char* message, unsigned char* return_message, unsigned char* key);
-
-
 #endif

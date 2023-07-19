@@ -1,0 +1,2259 @@
+<ENTRY>
+{
+ "thisFile": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 27 11:08:24 2023",
+ "timestampMillis": "1679908104771",
+ "buildStep": {
+  "cmdId": "be0fc792-6b25-4766-9d92-9f55bf2d577c",
+  "name": "v++",
+  "logFile": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/link.steps.log",
+  "commandLine": "/scratch/softs/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --link -t hw --platform xilinx_u200_gen3x16_xdma_2_202110_1 --save-temps --vivado.prop run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=../constraints/timing_TDC.tcl --vivado.prop run.impl_1.STEPS.PLACE_DESIGN.TCL.PRE=../constraints/pblocks_TDC.tcl --vivado.synth.jobs 24 --vivado.impl.jobs 24 --kernel_frequency 0:200 -o bin/picorv_sca.xclbin kernel.xo ",
+  "args": [
+   "--link",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u200_gen3x16_xdma_2_202110_1",
+   "--save-temps",
+   "--vivado.prop",
+   "run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=../constraints/timing_TDC.tcl",
+   "--vivado.prop",
+   "run.impl_1.STEPS.PLACE_DESIGN.TCL.PRE=../constraints/pblocks_TDC.tcl",
+   "--vivado.synth.jobs",
+   "24",
+   "--vivado.impl.jobs",
+   "24",
+   "--kernel_frequency",
+   "0:200",
+   "-o",
+   "bin/picorv_sca.xclbin",
+   "kernel.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:24 2023",
+ "timestampMillis": "1679908104771",
+ "status": {
+  "cmdId": "be0fc792-6b25-4766-9d92-9f55bf2d577c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Mar 27 11:08:32 2023",
+ "timestampMillis": "1679908112930",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_gen3x16_xdma_2_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_2_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "picorv_sca",
+    "file": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "AES_SCA_kernel",
+     "file": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/kernel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [],
+    "psSources": [],
+    "cuNames": [
+     "AES_SCA_kernel_1"
+    ],
+    "type": "RTL",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1. SW Build 3524075 on 2022-04-13-17:42:45"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 11:08:33 2023",
+ "timestampMillis": "1679908113398",
+ "buildStep": {
+  "cmdId": "77089d75-3240-4eda-8849-67bec2b2b5e2",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/kernel.xo -keep --xpfm /opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_2_202110_1/xilinx_u200_gen3x16_xdma_2_202110_1.xpfm --target hw --output_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int --temp_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/kernel.xo",
+   "-keep",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u200_gen3x16_xdma_2_202110_1/xilinx_u200_gen3x16_xdma_2_202110_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int",
+   "--temp_dir",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:33 2023",
+ "timestampMillis": "1679908113398",
+ "status": {
+  "cmdId": "77089d75-3240-4eda-8849-67bec2b2b5e2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:54 2023",
+ "timestampMillis": "1679908134198",
+ "status": {
+  "cmdId": "77089d75-3240-4eda-8849-67bec2b2b5e2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 11:08:54 2023",
+ "timestampMillis": "1679908134202",
+ "buildStep": {
+  "cmdId": "848b6057-d428-4e3a-a1cd-dc8631d242d4",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/sdsl.dat -rtd /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/cf2sw.rtd -nofilter /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/cf2sw_full.rtd -xclbin /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xclbin_orig.xml -o /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:54 2023",
+ "timestampMillis": "1679908134203",
+ "status": {
+  "cmdId": "848b6057-d428-4e3a-a1cd-dc8631d242d4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139266",
+ "status": {
+  "cmdId": "848b6057-d428-4e3a-a1cd-dc8631d242d4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139270",
+ "buildStep": {
+  "cmdId": "7a7e1701-b7cc-426d-8955-9ad63f9970de",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139270",
+ "status": {
+  "cmdId": "7a7e1701-b7cc-426d-8955-9ad63f9970de",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139882",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139883",
+ "status": {
+  "cmdId": "7a7e1701-b7cc-426d-8955-9ad63f9970de",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139886",
+ "buildStep": {
+  "cmdId": "25a543e3-1eb5-4c6d-bb29-d80c73e447e7",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u200_gen3x16_xdma_2_202110_1 --kernel_frequency 0:200 --remote_ip_cache /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/.ipcache -s --output_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int --log_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/logs/link --report_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link --config /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/vplConfig.ini -k /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link --no-info --iprepo /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xo/ip_repo/parsa_epfl_ch_RTLKernel_AES_SCA_kernel_1_0 --messageDb /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/run_link/vpl.pb /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u200_gen3x16_xdma_2_202110_1",
+   "--kernel_frequency",
+   "0:200",
+   "--remote_ip_cache",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/.ipcache",
+   "-s",
+   "--output_dir",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int",
+   "--log_dir",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/logs/link",
+   "--report_dir",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link",
+   "--config",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xo/ip_repo/parsa_epfl_ch_RTLKernel_AES_SCA_kernel_1_0",
+   "--messageDb",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/run_link/vpl.pb",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl\nmisc=BinaryName=picorv_sca\n\n[connectivity]\nnk=AES_SCA_kernel:1:AES_SCA_kernel_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\nsynth.jobs=24\nimpl.jobs=24\nprop=run.impl_1.STEPS.OPT_DESIGN.TCL.PRE=/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/../constraints/timing_TDC.tcl\nprop=run.impl_1.STEPS.PLACE_DESIGN.TCL.PRE=/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/../constraints/pblocks_TDC.tcl\n\n"
+   }
+  ],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:08:59 2023",
+ "timestampMillis": "1679908139887",
+ "status": {
+  "cmdId": "25a543e3-1eb5-4c6d-bb29-d80c73e447e7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 27 11:09:01 2023",
+ "timestampMillis": "1679908141735",
+ "buildStep": {
+  "cmdId": "25782464-be5e-4c50-bfea-f3a15c22f6e1",
+  "name": "vpl",
+  "logFile": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/link.steps.log",
+  "commandLine": "/scratch/softs/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u200_gen3x16_xdma_2_202110_1 --kernel_frequency 0:200 --remote_ip_cache /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/.ipcache -s --output_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int --log_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/logs/link --report_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link --config /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/vplConfig.ini -k /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link --no-info --iprepo /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xo/ip_repo/parsa_epfl_ch_RTLKernel_AES_SCA_kernel_1_0 --messageDb /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/run_link/vpl.pb /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:09:01 2023",
+ "timestampMillis": "1679908141735",
+ "status": {
+  "cmdId": "25782464-be5e-4c50-bfea-f3a15c22f6e1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Mon Mar 27 11:09:11 2023",
+ "timestampMillis": "1679908151065",
+ "vivadoProject": {
+  "openDir": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 11:09:11 2023",
+ "timestampMillis": "1679908151066",
+ "buildStep": {
+  "cmdId": "b07024bd-6235-4cba-9eb8-b469b09a65ea",
+  "name": "vivado",
+  "logFile": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:09:11 2023",
+ "timestampMillis": "1679908151067",
+ "status": {
+  "cmdId": "b07024bd-6235-4cba-9eb8-b469b09a65ea",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 11:10:11 2023",
+ "timestampMillis": "1679908211812",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/automation_summary_update_bd.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 27 11:22:37 2023",
+ "timestampMillis": "1679908957927",
+ "buildStep": {
+  "cmdId": "269447ae-5b9f-49c8-9877-6f4f4288bca1",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:22:37 2023",
+ "timestampMillis": "1679908957929",
+ "status": {
+  "cmdId": "269447ae-5b9f-49c8-9877-6f4f4288bca1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 27 11:22:37 2023",
+ "timestampMillis": "1679908957930",
+ "buildStep": {
+  "cmdId": "f2fbc090-e2f8-4334-87b0-2181cf07729a",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 11:22:37 2023",
+ "timestampMillis": "1679908957931",
+ "status": {
+  "cmdId": "f2fbc090-e2f8-4334-87b0-2181cf07729a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:36:15 2023",
+ "timestampMillis": "1679913375156",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:36:15 2023",
+ "timestampMillis": "1679913375157",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:38:39 2023",
+ "timestampMillis": "1679913519932",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_FAIL",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:11 2023",
+ "timestampMillis": "1679914151924",
+ "status": {
+  "cmdId": "b07024bd-6235-4cba-9eb8-b469b09a65ea",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152130",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152132",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152132",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152133",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152134",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152135",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152150",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ii_level0_wire_0_synth_1_ulp_ii_level0_wire_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152151",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_memory_subsystem_0_synth_1_ulp_memory_subsystem_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152152",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ss_ucs_0_synth_1_ulp_ss_ucs_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152152",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_cc_axi_data_h2c_00_0_synth_1_ulp_ip_cc_axi_data_h2c_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152153",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_cc_axi_data_h2c_01_0_synth_1_ulp_ip_cc_axi_data_h2c_01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152154",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_cc_axi_data_h2c_03_0_synth_1_ulp_ip_cc_axi_data_h2c_03_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152155",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_rs_axi_data_c2h_00_0_synth_1_ulp_ip_rs_axi_data_c2h_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152156",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ulp_cmp_0_synth_1_ulp_ulp_cmp_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152157",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_gpio_debug_axi_ctrl_mgmt_00_0_synth_1_ulp_ip_gpio_debug_axi_ctrl_mgmt_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152157",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_gpio_debug_axi_ctrl_mgmt_01_0_synth_1_ulp_ip_gpio_debug_axi_ctrl_mgmt_01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152158",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_gpio_debug_axi_ctrl_user_00_0_synth_1_ulp_ip_gpio_debug_axi_ctrl_user_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152159",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_gpio_debug_axi_ctrl_user_01_0_synth_1_ulp_ip_gpio_debug_axi_ctrl_user_01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152159",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_gpio_debug_axi_ctrl_user_02_0_synth_1_ulp_ip_gpio_debug_axi_ctrl_user_02_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152160",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_inv_aresetn_ctrl_00_0_synth_1_ulp_ip_inv_aresetn_ctrl_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152161",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_ctrl_slr0_0_synth_1_ulp_ip_psr_aresetn_ctrl_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152162",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_ctrl_slr1_0_synth_1_ulp_ip_psr_aresetn_ctrl_slr1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152162",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_ctrl_slr2_0_synth_1_ulp_ip_psr_aresetn_ctrl_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152163",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_kernel_00_slr0_0_synth_1_ulp_ip_psr_aresetn_kernel_00_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152164",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_kernel_00_slr2_0_synth_1_ulp_ip_psr_aresetn_kernel_00_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152164",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_kernel_01_slr0_0_synth_1_ulp_ip_psr_aresetn_kernel_01_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152165",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_kernel_01_slr1_0_synth_1_ulp_ip_psr_aresetn_kernel_01_slr1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152166",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_kernel_01_slr2_0_synth_1_ulp_ip_psr_aresetn_kernel_01_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152166",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_pcie_slr0_0_synth_1_ulp_ip_psr_aresetn_pcie_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152167",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_pcie_slr1_0_synth_1_ulp_ip_psr_aresetn_pcie_slr1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152168",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_pcie_slr2_0_synth_1_ulp_ip_psr_aresetn_pcie_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152168",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_freerun_slr0_0_synth_1_ulp_ip_psr_aresetn_freerun_slr0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152169",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_freerun_slr1_0_synth_1_ulp_ip_psr_aresetn_freerun_slr1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152170",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_ip_psr_aresetn_freerun_slr2_0_synth_1_ulp_ip_psr_aresetn_freerun_slr2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152170",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_gpio_ucs_control_status_0_synth_1_bd_1361_gpio_ucs_control_status_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152171",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_clock_shutdown_latch_0_synth_1_bd_1361_clock_shutdown_latch_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152171",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_fanout_aresetn_pcie_slr0_1_0_synth_1_bd_1361_fanout_aresetn_pcie_slr0_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152172",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_AES_SCA_kernel_1_0_synth_1_ulp_AES_SCA_kernel_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152173",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_xbar_4_synth_1_ulp_xbar_4_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152174",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_m01_regslice_3_synth_1_ulp_m01_regslice_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152174",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_auto_cc_0_synth_1_ulp_auto_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152175",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_s00_regslice_39_synth_1_ulp_s00_regslice_39_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152175",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_s00_regslice_40_synth_1_ulp_s00_regslice_40_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152176",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_s00_regslice_41_synth_1_ulp_s00_regslice_41_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152176",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_auto_ds_0_synth_1_ulp_auto_ds_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152177",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_auto_pc_0_synth_1_ulp_auto_pc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152178",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_psr_aclk1_SLR1_0_synth_1_bd_b35e_psr_aclk1_SLR1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152178",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_interconnect_M00_AXI_MEM00_0_synth_1_bd_b35e_interconnect_M00_AXI_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152179",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_fanout_aresetn_kernel_00_slr2_1_0_synth_1_bd_1361_fanout_aresetn_kernel_00_slr2_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152180",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_psreset_kernel_00_0_synth_1_bd_1361_psreset_kernel_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152180",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_aclk_kernel_01_adapt_0_synth_1_bd_1361_aclk_kernel_01_adapt_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152181",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_clkwiz_aclk_kernel_01_0_synth_1_bd_1361_clkwiz_aclk_kernel_01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152181",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_clock_throttling_aclk_kernel_01_0_synth_1_bd_1361_clock_throttling_aclk_kernel_01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152182",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_fanout_aresetn_kernel_01_slr0_1_0_synth_1_bd_1361_fanout_aresetn_kernel_01_slr0_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152183",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_clock_throttling_avg_0_synth_1_bd_1361_clock_throttling_avg_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152183",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_gpio_gapping_demand_0_synth_1_bd_1361_gpio_gapping_demand_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152184",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_gapping_demand_update_0_synth_1_bd_1361_gapping_demand_update_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152185",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_xbar_0_synth_1_bd_1361_xbar_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152185",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_gapping_demand_toggle_0_synth_1_bd_1361_gapping_demand_toggle_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152186",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_build_info_0_synth_1_bd_1361_build_info_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152186",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_xbar_3_synth_1_ulp_xbar_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152187",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_xbar_2_synth_1_ulp_xbar_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152187",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_m02_regslice_0_synth_1_ulp_m02_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152188",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_psreset_kernel_01_0_synth_1_bd_1361_psreset_kernel_01_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152189",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_097b_build_info_0_synth_1_bd_097b_build_info_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152190",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_097b_user_debug_bridge_0_synth_1_bd_097b_user_debug_bridge_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152190",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_7cf0_axi_jtag_0_synth_1_bd_7cf0_axi_jtag_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152191",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_7cf0_bsip_0_synth_1_bd_7cf0_bsip_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152191",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_7cf0_bs_switch_1_0_synth_1_bd_7cf0_bs_switch_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152192",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_097b_user_debug_hub_0_synth_1_bd_097b_user_debug_hub_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152192",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_58f6_xsdbm_0_synth_1_bd_58f6_xsdbm_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152193",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_58f6_lut_buffer_0_synth_1_bd_58f6_lut_buffer_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152194",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_fanout_aresetn_ctrl_slr0_1_0_synth_1_bd_1361_fanout_aresetn_ctrl_slr0_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152195",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_xbar_1_synth_1_bd_1361_xbar_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152196",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_frequency_counter_aclk_0_synth_1_bd_1361_frequency_counter_aclk_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152196",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_frequency_counter_aclk_kernel_00_0_synth_1_bd_1361_frequency_counter_aclk_kernel_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152197",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_psreset_aclk_freerun_0_synth_1_bd_1361_psreset_aclk_freerun_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152198",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_aclk_kernel_00_adapt_0_synth_1_bd_1361_aclk_kernel_00_adapt_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152198",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_clkwiz_aclk_kernel_00_0_synth_1_bd_1361_clkwiz_aclk_kernel_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152199",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_clock_throttling_aclk_kernel_00_0_synth_1_bd_1361_clock_throttling_aclk_kernel_00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152200",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_m00_regslice_3_synth_1_ulp_m00_regslice_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152201",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_1361_auto_cc_0_synth_1_bd_1361_auto_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152202",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_m03_regslice_0_synth_1_ulp_m03_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152202",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/ulp_m00_regslice_2_synth_1_ulp_m00_regslice_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152203",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_vip_S01_AXI_0_synth_1_bd_b35e_vip_S01_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152204",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_vip_S04_AXI_0_synth_1_bd_b35e_vip_S04_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152205",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_vip_M00_AXI_0_synth_1_bd_b35e_vip_M00_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152205",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_rs_M00_AXI_0_synth_1_bd_b35e_rs_M00_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152206",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_interconnect_ddrmem_ctrl_0_synth_1_bd_b35e_interconnect_ddrmem_ctrl_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152207",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/syn/bd_b35e_psr_ctrl_interconnect_0_synth_1_bd_b35e_psr_ctrl_interconnect_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152229",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "f2fbc090-e2f8-4334-87b0-2181cf07729a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152248",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "f2fbc090-e2f8-4334-87b0-2181cf07729a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152249",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "f2fbc090-e2f8-4334-87b0-2181cf07729a"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152306",
+ "status": {
+  "cmdId": "25782464-be5e-4c50-bfea-f3a15c22f6e1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152545",
+ "status": {
+  "cmdId": "25a543e3-1eb5-4c6d-bb29-d80c73e447e7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152551",
+ "buildStep": {
+  "cmdId": "9b20456f-f557-4b6b-8e5b-b9a02d749a46",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152552",
+ "status": {
+  "cmdId": "9b20456f-f557-4b6b-8e5b-b9a02d749a46",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152565",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152567",
+ "buildStep": {
+  "cmdId": "3ed3872a-7958-4706-a8c1-8a829b245393",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/address_map.xml -sdsl /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/sdsl.dat -xclbin /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xclbin_orig.xml -rtd /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.rtd -o /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.xml",
+  "args": [
+   "-a",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.rtd",
+   "-o",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:12 2023",
+ "timestampMillis": "1679914152568",
+ "status": {
+  "cmdId": "3ed3872a-7958-4706-a8c1-8a829b245393",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157433",
+ "status": {
+  "cmdId": "3ed3872a-7958-4706-a8c1-8a829b245393",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157435",
+ "buildStep": {
+  "cmdId": "7373ee80-9d99-473f-a8b3-9a383da4f0f9",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.rtd",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157435",
+ "status": {
+  "cmdId": "7373ee80-9d99-473f-a8b3-9a383da4f0f9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157440",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157441",
+ "status": {
+  "cmdId": "7373ee80-9d99-473f-a8b3-9a383da4f0f9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157442",
+ "buildStep": {
+  "cmdId": "7074057a-9e27-4d17-8351-3fafc10b03d1",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157442",
+ "status": {
+  "cmdId": "7074057a-9e27-4d17-8351-3fafc10b03d1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157443",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157444",
+ "status": {
+  "cmdId": "7074057a-9e27-4d17-8351-3fafc10b03d1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157445",
+ "status": {
+  "cmdId": "9b20456f-f557-4b6b-8e5b-b9a02d749a46",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157449",
+ "buildStep": {
+  "cmdId": "35220785-1de3-42d9-bb1c-1c1d1dae0c94",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.rtd --append-section :JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca_xml.rtd --add-section BUILD_METADATA:JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.xml --add-section SYSTEM_METADATA:RAW:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u200_gen3x16_xdma_2_202110_1 --output /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.rtd",
+   "--append-section",
+   ":JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/picorv_sca.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u200_gen3x16_xdma_2_202110_1",
+   "--output",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157449",
+ "status": {
+  "cmdId": "35220785-1de3-42d9-bb1c-1c1d1dae0c94",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157750",
+ "status": {
+  "cmdId": "35220785-1de3-42d9-bb1c-1c1d1dae0c94",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157753",
+ "buildStep": {
+  "cmdId": "eac9ca50-1ae5-498d-9252-30a49b173267",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin.info --input /home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin.info",
+   "--input",
+   "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/bin/picorv_sca.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:17 2023",
+ "timestampMillis": "1679914157754",
+ "status": {
+  "cmdId": "eac9ca50-1ae5-498d-9252-30a49b173267",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158385",
+ "status": {
+  "cmdId": "eac9ca50-1ae5-498d-9252-30a49b173267",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158388",
+ "buildStep": {
+  "cmdId": "97f5d86e-895c-4196-8e99-5f77e1f32538",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158389",
+ "status": {
+  "cmdId": "97f5d86e-895c-4196-8e99-5f77e1f32538",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158389",
+ "status": {
+  "cmdId": "97f5d86e-895c-4196-8e99-5f77e1f32538",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158407",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/system_estimate_picorv_sca.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158808",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/reports/link/v++_link_picorv_sca_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158809",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/v++_link_picorv_sca_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158846",
+ "report": {
+  "path": "/home/spielman/artifacts/ds_22/code/TCHES_artifacts_v2/alveo/tcl/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 27 12:49:18 2023",
+ "timestampMillis": "1679914158848",
+ "status": {
+  "cmdId": "be0fc792-6b25-4766-9d92-9f55bf2d577c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

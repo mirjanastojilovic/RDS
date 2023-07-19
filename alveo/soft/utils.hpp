@@ -24,9 +24,9 @@ void save_ciphertext(uint8_t *ciphertext, FILE *ciphertext_f);
 void save_key(uint8_t *key, FILE *key_f);
 void init_system(xrt::ip kernel, xrt::bo buffer);
 void send_calibration(xrt::ip kernel, xrt::bo buffer, uint32_t* hbuf, uint32_t **idc_idf, int n_sensors, int idc_size, int idf_size);
-void calibrate_sensors_from_file(xrt::ip kernel, xrt::bo buffer, uint32_t* hbuf, int n_sensors, int idc_size, int idf_size, char* CALIB_PATH);
-void calibrate(xrt::ip kernel, xrt::bo buffer, uint32_t * hbuf, char calib_file_name[100], int N_SENSORS, int N_SAMPLES, int IDC_SIZE, int IDF_SIZE, int calib, int SENSOR_WIDTH, FILE* idc_idf_f);
-void calibrate_idc_idf(xrt::ip kernel, xrt::bo buffer, uint32_t * hbuf, char calib_file_name[100], int N_SENSORS, int N_SAMPLES, int IDC_SIZE, int IDF_SIZE, int calib, int SENSOR_WIDTH, FILE* idc_idf_f);
+void calibrate_from_file(xrt::ip kernel, xrt::bo buffer, uint32_t* hbuf, int n_sensors, int idc_size, int idf_size, char* CALIB_PATH);
+void calibrate_tdc(xrt::ip kernel, xrt::bo buffer, uint32_t * hbuf, char calib_file_name[100], int N_SENSORS, int N_SAMPLES, int IDC_SIZE, int IDF_SIZE, int calib, int SENSOR_WIDTH, FILE* idc_idf_f);
+void calibrate_rds(xrt::ip kernel, xrt::bo buffer, uint32_t * hbuf, char calib_file_name[100], int N_SENSORS, int N_SAMPLES, int IDC_SIZE, int IDF_SIZE, int calib, int SENSOR_WIDTH, FILE* idc_idf_f);
 void save_temperature(FILE * temperature_f, int trace);
 
 

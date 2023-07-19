@@ -93,15 +93,15 @@ int main(int argc, char *argv[]) {
 
     // TDC calibration
     if (calib == 0) {
-        calibrate(kernel, buffer, hbuf, file_path, N_SENSORS, N_SAMPLES,
+        calibrate_tdc(kernel, buffer, hbuf, file_path, N_SENSORS, N_SAMPLES,
                   IDC_SIZE, IDF_SIZE, calib, SENSOR_WIDTH, idc_idf_f);
     // RDS calibration
     } else if (calib == 1) {
-        calibrate_idc_idf(kernel, buffer, hbuf, file_path, N_SENSORS, N_SAMPLES,
+        calibrate_rds(kernel, buffer, hbuf, file_path, N_SENSORS, N_SAMPLES,
                           IDC_SIZE, IDF_SIZE, calib, SENSOR_WIDTH, idc_idf_f);
     // Calibration from file
     } else {
-      calibrate_sensors_from_file(kernel, buffer, hbuf, N_SENSORS, IDC_SIZE, IDF_SIZE, CALIB_PATH); 
+      calibrate_from_file(kernel, buffer, hbuf, N_SENSORS, IDC_SIZE, IDF_SIZE, CALIB_PATH); 
     }
 
     fclose(idc_idf_f);
