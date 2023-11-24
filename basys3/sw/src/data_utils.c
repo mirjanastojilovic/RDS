@@ -1747,7 +1747,7 @@ int calibrate_sensor(int fd, uint8_t *plaintext, uint8_t *key,
             for (int j = 0; j < NUM_SAMPLES; j++) {
                 current = 0;
                 for (int i = 0; i < 16; i++) {
-                    current += count_one((int)sensor_trace[j + i]);
+                    current += count_one((int)sensor_trace[j * 16 + i]);
                     if(j==0){
                 printf("%02X", sensor_trace[i]);
                 }
