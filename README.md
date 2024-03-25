@@ -202,8 +202,9 @@ Follow these steps to collect power traces on the Digilent Basys 3 board. The Ba
 5. Vivado automatically creates a project which implements the RDS sensor. To implement the design, hit the `Run Implementation` button.
 6. Click on the `Generate Bitstream` button to generate the bitstream of the implementation.
 7. Program the FPGA with the bistream that has been generated in point 5.
-8. Compile the software part in the directory `basys3/sw` by typing `make`.
-9. Change to the directory `basys3/sw/bin`. The software comes along with a help message. Display the help message by typing `./interface -help`. The help message describes all the arguments needed to collect the power traces. For example, for the experiments in Section 6.5, the following command was used: `./interface -k 0 -pt 1 -t 70000 -s -d traces/experiment_6_5 `.
+8. On the Basys3 board, make sure SW15 is in the ON position (connected to 1).
+9. Compile the software part in the directory `basys3/sw` by typing `make`.
+10. Change to the directory `basys3/sw/bin`. The software comes along with a help message. Display the help message by typing `./interface -help`. The help message describes all the arguments needed to collect the power traces. For example, for the experiments in Section 6.5, the following command was used: `./interface -k 0 -pt 1 -t 70000 -s -d traces/experiment_6_5 `.
 </details>
 
 # Attack
