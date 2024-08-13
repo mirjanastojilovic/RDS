@@ -17,15 +17,44 @@ output_file = os.path.splitext(input_file)[0]+".data"
 
 print("Converting "+input_file+" to "+output_file+"...")
 
-bin_file = open(input_file, 'rb')
+def compute_hw_trace(samples_list, sample_index):
+    current_sample = samples_list[sample_index]
+    sample_hw = 0
+    for i in range(0,len(current_sample),2):
+        current_byte = current_sample[i : i+2]
+        current_byte = '0x' + current_byte
+        sample_hw += bin(eval(current_byte))[2:].count('1')
+    return sample_hw
+
+
+if(input_file[-4:] == '.bin'):
+    bin_file = open(input_file, 'rb')
+if(input_file[-4:] == '.csv'):
+    print("Converting sensor traces to hamming distance trace.")
+    csv_file = open(input_file, 'r')
+
+
 data_file = open(output_file, 'wb')
 output = []
 for i in range(0,int(sys.argv[2])):
     output = []
+    line = csv_file.readline()
+    if not line:
+        break
+    line = line.strip()
+    mysamples = line.split(',')
     for j in range(0, int(sys.argv[3])):
-        a = int.from_bytes(bin_file.read(1), 'little')
+        if(input_file[-4:] == '.bin'):
+            a = int.from_bytes(bin_file.read(1), 'little')
+        if(input_file[-4:] == '.csv'):
+            a = compute_hw_trace(mysamples,j)
         output.append(a)
     float_array = array('f', output)
     float_array.tofile(data_file)
+
 data_file.close()
-bin_file.close()
+if(input_file[-4:] == '.bin'):
+    bin_file.close()
+if(input_file[-4:] == '.csv'):
+    csv_file.close()
+

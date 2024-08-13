@@ -220,7 +220,7 @@ Content: key_rank/
   |Makefile               : Makefile for the CUDA CPA attack.
   |launch_attack.py       : PYTHON script for launching the complete attack (it compiles the CUDA code and runs all the required scripts and programs for the attack).
   |calculate_keyrank.py   : PYTHON script for generating the Key Rank.
-  |convert_traces.py      : PYTHON script for generating a .data file that contains the traces, from a .bin file.
+  |convert_traces.py      : PYTHON script for generating a .data file that contains the traces, from a .bin or a .csv file.
   |convert_ciphertexts.py : PYTHON script for generating a .data file that contains the ciphertexts, from a .bin file. 
 
 ```
